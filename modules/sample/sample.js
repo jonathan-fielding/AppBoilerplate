@@ -4,10 +4,10 @@ var sample = function(){
 	};
 
 	return {
-		init: function(app){
+		init: function(eventData){
 			//Handle receiving messages from the previous page
-			if(app.eventData.options.data){
-				alert(app.eventData.options.data);
+			if(eventData.options.data){
+				alert(eventData.options.data);
 			}
 		}
 	}
