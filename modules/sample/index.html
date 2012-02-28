@@ -3,13 +3,12 @@
 	<head> 
 		<title>App Name</title> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<link rel="stylesheet" href="../../assets/css/jquery.mobile-1.0.1.min.css" />
+		<link rel="stylesheet" href="../../assets/css/jquery.mobile-1.1.0-rc.1.min.css" />
 	</head> 
 <body> 
-	
 	<div data-role="page" data-module="sample">
 	
-		<div data-role="header">
+		<div data-role="header" data-position="fixed" data-fullscreen="true">
 			<h1>Sample page</h1>
 		</div><!-- /header -->
 	
@@ -17,10 +16,14 @@
 			<p>You are now in the sample page</p>		
 		</div><!-- /content -->
 	
+		<div data-role="footer" data-position="fixed"  data-fullscreen="true">
+			<h1>based on AppBoilerplate</h1>
+		</div>
+	
 	</div><!-- /page -->
 	
 	<script src="../../assets/js/libs/jquery-1.7.1.min.js"></script>
-	<script src="../../assets/js/libs/jquery.mobile-1.0.1.min.js"></script>
+	<script src="../../assets/js/libs/jquery.mobile-1.1.0-rc.1.js"></script>
 	<script src="../../assets/js/libs/require.js"></script>
 	<script src="../../assets/js/core.js"></script>
 </body>
