@@ -76,21 +76,69 @@ td { vertical-align: top; }
 
 body{
 	background: #554444;
+	font-size: 65%;
 }
 
 .wrapper{
 	width: 980px;
-	margin: 0 auto;
+	margin: 0px auto;
 }
 
-h1{
+p, li{
+	color: #ddaa88;
+	font-size: 1.2em;
+}
+
+li li{
+	font-size: 1em;
+}
+
+
+header{
+	position: relative;
+	padding: 40px 0;
+}
+
+header h1{
 	color: #ffeedd;
 	margin: 10;
+	font-size: 5em;
+	margin: 0px;
 }
 
-p{
-	color: #ddaa88;
+header p.subtitle{
+	margin-top: 0px;
 }
+
+header menu{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: #4c4c4c; /* Old browsers */
+	background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(12%,#595959), color-stop(25%,#666666), color-stop(39%,#474747), color-stop(50%,#2c2c2c), color-stop(51%,#000000), color-stop(60%,#111111), color-stop(76%,#2b2b2b), color-stop(91%,#1c1c1c), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* IE10+ */
+	background: linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+}
+
+header menu li{
+	line-height: 30px;
+	list-style: none;
+	margin: 0px;
+	padding: 0 20px;
+}
+
+header menu li a{
+	color: #fff;
+}
+
+
 
 
 

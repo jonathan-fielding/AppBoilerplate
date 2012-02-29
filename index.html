@@ -18,58 +18,68 @@
 	<script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
-	<div class="wrapper">
+	
 		<header>
-			<a href="https://github.com/jonathan-fielding/AppBoilerplate"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-			
-			<h1>AppBoilerplate</h1>
-			<p>A jQuery mobile framework for building web and phonegap applications</p>
-			
-			<div class="download">
-			  <a href="https://github.com/jonathan-fielding/AppBoilerplate/zipball/master">
-			    <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-			  <a href="https://github.com/jonathan-fielding/AppBoilerplate/tarball/master">
-			    <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+			<div class="wrapper">
+				<a href="https://github.com/jonathan-fielding/AppBoilerplate"><img style="z-index: 99999; position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+				
+				<h1>AppBoilerplate</h1>
+				<p class="subtitle">A jQuery mobile framework for building web and phonegap applications</p>
+				
+				<menu>
+					<li><a href="#">Why AppBoilerplate?</a></li>
+				</menu>
+				
+				<div class="download">
+				  <a href="https://github.com/jonathan-fielding/AppBoilerplate/zipball/master">
+				    <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
+				  <a href="https://github.com/jonathan-fielding/AppBoilerplate/tarball/master">
+				    <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+				</div>
 			</div>
 		</header>
 		<div role="main">
-			<h2>Why use AppBoilerplate</h2>
-			<p>When working on a web application for mobile its easy to end up with huge mess of javascript all in one file, AppBoilerplate aims to stop this happening by encouraging you to separate your code out into separate modules without the worry of having to manually load in each module</p>
+			<div class="wrapper">
+				<h2>Why use AppBoilerplate</h2>
+				<p>When working on a web application for mobile its easy to end up with huge mess of javascript all in one file, AppBoilerplate aims to stop this happening by encouraging you to separate your code out into separate modules without the worry of having to manually load in each module</p>
+				
+				<h2>Where would I use App Boilerplate?</h2>
+				<p>AppBoilerplate brings the most benefits when used for web applications and PhoneGap applications.</p>
+				
+				<h2>Structure of AppBoilerplate</h2>
+				<p>The structure of app boilerplate is very easy to understand, images and anything that is shared is within the assets folders, sections of the application are called modules in the module folders and finally we have a themes folder that you an use for any theming of jQuery mobile.</p>
+				<ul>
+					<li>assets
+						<ul>
+							<li>css</li>
+							<li>img</li>
+							<li>js
+								<ul>
+									<li>libs
+										<ul>
+											<li>jquery-1.7.1.min.js</li>
+											<li>jquery.mobile-1.0.1.js</li>
+											<li>jquery.mobile-1.0.1.min.js</li>
+											<li>require.js</li>
+										</ul>
+									</li>
+									<li>core.js</li>
+								</ul>
+							</li>
+						</ul>
+						
+					</li>
+					<li>modules</li>
+					<li>themes</li>
+					<li>index.html</li>
+					<li>bootstrap.js</li>
+				</ul>
+			</div>
 			
-			
-			<h2>Structure of AppBoilerplate</h2>
-			<p>The structure of app boilerplate is very easy to understand, images and anything that is shared is within the assets folders, sections of the application are called modules in the module folders and finally we have a themes folder that you an use for any theming of jQuery mobile.</p>
-			<ul>
-				<li>assets
-					<ul>
-						<li>css</li>
-						<li>img</li>
-						<li>js
-							<ul>
-								<li>libs
-									<ul>
-										<li>jquery-1.7.1.min.js</li>
-										<li>jquery.mobile-1.0.1.js</li>
-										<li>jquery.mobile-1.0.1.min.js</li>
-										<li>require.js</li>
-									</ul>
-								</li>
-								<li>core.js</li>
-							</ul>
-						</li>
-					</ul>
-					
-				</li>
-				<li>modules</li>
-				<li>themes</li>
-				<li>index.html</li>
-				<li>bootstrap.js</li>
-			</ul>
 		</div>
 		<footer>
 		
 		</footer>
-	</div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
