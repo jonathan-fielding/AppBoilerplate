@@ -24,10 +24,11 @@
 				<a href="https://github.com/jonathan-fielding/AppBoilerplate"><img style="z-index: 99999; position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 				
 				<h1>AppBoilerplate</h1>
-				<p class="subtitle">A jQuery mobile framework for building web and phonegap applications</p>
+				<p class="subtitle">A jQuery mobile framework for building web and phonegap applications, this website is work in progress</p>
 				
 				<menu>
 					<li><a href="#">Why AppBoilerplate?</a></li>
+					<li><a href="#getting_started">Getting started</a></li>
 				</menu>
 				
 				<div class="download">
@@ -43,11 +44,78 @@
 				<h2>Why use AppBoilerplate</h2>
 				<p>When working on a web application for mobile its easy to end up with huge mess of javascript all in one file, AppBoilerplate aims to stop this happening by encouraging you to separate your code out into separate modules without the worry of having to manually load in each module</p>
 				
+				<h2>Key Features</h2>
+				<ul>
+					<li>Full plugin system</li>
+					<li>Fully modular, if you do not need a feature just remove it</li>
+					<li>Built in theming</li>
+					<li>Completely open source, fork it, butcher it, do what you want with it and then see if your changes will be of benefit to all users in which case we can incorporate your changes with the core build</li>
+				</ul>
+				
 				<h2>Where would I use App Boilerplate?</h2>
 				<p>AppBoilerplate brings the most benefits when used for web applications and PhoneGap applications.</p>
 				
+				<h2>Comparisons to other frameworks</h2>
+				
+				<table width="100%" border="1" cellspacing="0" cellpadding="0">
+					<tr>
+						<th>&nbsp;</th>
+						<th>AppBoilerplate</th>
+						<th>KendoUI Mobile</th>
+						<th>Sencha Touch</th>
+					</tr>
+					<tr>
+						<td class="row_title">OS specific themes</td>
+						<td>Yes (via bundled plugin)</td>
+						<td>Yes</td>
+						<td>No</td>
+					</tr>
+					<tr>
+						<td class="row_title">Plugin support</td>
+						<td>Yes</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="row_title">HTML5 database support</td>
+						<td>Coming soon</td>
+						<td>No</td>
+						<td>No</td>
+					</tr>
+					<tr>
+						<td class="row_title">Lightweight (remove what you don't need)</td>
+						<td>Yes</td>
+						<td>No</td>
+						<td>No</td>
+					</tr>
+					<tr>
+						<td class="row_title">Completely free to use and modify</td>
+						<td>Yes</td>
+						<td>Commercial licence</td>
+						<td>Free but no support</td>
+					</tr>
+					<tr>
+						<td class="row_title">Support for jQuery Mobile Plugins</td>
+						<td>Yes</td>
+						<td>No</td>
+						<td>No</td>
+					</tr>
+					<tr>
+						<td class="row_title">Support for jQuery Plugins</td>
+						<td>Yes</td>
+						<td>Yes	</td>
+						<td>No</td>
+					</tr>
+					<tr>
+						<td class="row_title">PhoneGap compatible</td>
+						<td>Yes</td>
+						<td>Yes	</td>
+						<td>Yes</td>
+					</tr>
+				</table>
+				
 				<h2>Structure of AppBoilerplate</h2>
-				<p>The structure of app boilerplate is very easy to understand, images and anything that is shared is within the assets folders, sections of the application are called modules in the module folders and finally we have a themes folder that you an use for any theming of jQuery mobile.</p>
+				<p>The default structure of app boilerplate is very easy to understand, images and anything that is shared is within the assets folders, sections of the application are called modules in the module folders and finally we have a themes folder that you an use for any theming of jQuery mobile.</p>
 				<ul>
 					<li>assets
 						<ul>
@@ -74,11 +142,41 @@
 					<li>index.html</li>
 					<li>bootstrap.js</li>
 				</ul>
+				
+				<h2 id="getting_started">Getting started</h2>
+				
+				<div class="tab_box">
+					<menu class="clearfix">
+						<li><a href="#creating">Step 1 - Creating a project</a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#">Configuring a plugin</a></li>
+					</menu>
+					<div id="creating">
+						<h3>Step 1 - Creating a project</h3>
+						<p>
+							To create a project you first need to  <a href="https://github.com/jonathan-fielding/AppBoilerplate/zipball/master">download AppBoilerplate from GitHub</a>.
+						</p>
+						<p>
+							Once you have your files extracted you first need to decide on how you want to structure your files, by default everything is split into modules however you could easily change the structure into more of a pages structure.
+						</p>
+					</div>
+					<div>
+						<h3>Creating a module/page</h3>
+						<p>So you have decided on your structure in step 1, </p>
+					</div>
+					<div>
+						<h3>Configuring a plugin</h3>
+						<p>
+						</p>
+					</div>
+				</div>
 			</div>
 			
 		</div>
 		<footer>
-		
+			<div class="wrapper">
+				<p>Created by Jonathan Fielding, special thanks to <a href="https://twitter.com/#!/Iszak">Iszak Bryan AKA Senior Grump</a> for helping with the passing of data between pages and general debugging</p>
+			</div>
 		</footer>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

@@ -84,9 +84,12 @@ body{
 	margin: 0px auto;
 }
 
+p, li, td, th{
+	font-size: 1.2em;
+}
+
 p, li{
 	color: #ddaa88;
-	font-size: 1.2em;
 }
 
 li li{
@@ -104,6 +107,7 @@ header h1{
 	margin: 10;
 	font-size: 5em;
 	margin: 0px;
+	white-space: pre;
 }
 
 header p.subtitle{
@@ -132,16 +136,58 @@ header menu li{
 	list-style: none;
 	margin: 0px;
 	padding: 0 20px;
+	float: left;
 }
 
 header menu li a{
 	color: #fff;
 }
 
+.tab_box menu{
+	padding: 0px;
+	margin: 0px;
+}
 
+.tab_box menu li{
+	float: left;
+	list-style: none;
+	padding-right: 20px;
+	background: #fff;
+}
 
+.tab_box div{
+	background: #fff;
+}
 
+.js .tab_box h3{
+	display: none;
+}
 
+.tab_box div p{
+	color: #554444;
+}
+
+.tab_box div p{
+	margin: 0px;
+	padding: 5px;
+}
+
+table{
+	background:#fff;
+}
+
+table td,table th{
+	text-align:center;
+	padding:3px;
+}
+
+table td.row_title{
+	text-align:left;
+}
+
+footer{
+	padding: 20px 0;
+}
 
 
 
