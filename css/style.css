@@ -172,6 +172,48 @@ header menu li a{
 	padding: 5px;
 }
 
+ul.file_list,ul.file_list ul{
+	padding: 0px;
+	background: #fff;
+	margin: 0px;
+}
+
+ul.file_list li{
+	margin-left: 0px;
+	list-style: none;
+	color: #000
+}
+
+ul.file_list li span.js{
+	background: url('../assets/img/icons/js') no-repeat 5px center;
+}
+
+ul.file_list li span.folder{
+	display: block;
+	background: url('../assets/img/icons/folder.gif') no-repeat 5px center;
+}
+
+ul.file_list li span{
+	padding: 5px 40px;
+	display: block;
+	border-bottom: 1px solid #999;
+}
+
+ul.file_list li li span{
+	padding-left: 70px;
+	background-position-x: 35px!important;
+}
+
+ul.file_list li li li span{
+	padding-left: 100px;
+	background-position-x: 65px!important;
+}
+
+ul.file_list li li li li span{
+	padding-left: 130px;
+	background-position-x: 95px!important;
+}
+
 table{
 	background:#fff;
 }
