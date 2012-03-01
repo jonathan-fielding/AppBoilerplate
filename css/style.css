@@ -193,6 +193,11 @@ ul.file_list li span.folder{
 	background: url('../assets/img/icons/folder.gif') no-repeat 5px center;
 }
 
+ul.file_list li span.html{
+	display: block;
+	background: url('../assets/img/icons/html.gif') no-repeat 5px center;
+}
+
 ul.file_list li span{
 	padding: 5px 40px;
 	display: block;
