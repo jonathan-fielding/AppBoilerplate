@@ -84,6 +84,14 @@ body{
 	margin: 0px auto;
 }
 
+a, a:hover, a:visited{
+	color: #fef6ef;
+}
+
+.tab_box a, .tab_box a:hover, .tab_box a:visited{
+	color: #333;
+}
+
 p, li, td, th{
 	font-size: 1.2em;
 }
@@ -99,7 +107,7 @@ li li{
 
 header{
 	position: relative;
-	padding: 40px 0;
+	padding: 40px 0 10px;
 }
 
 header h1{
@@ -108,6 +116,10 @@ header h1{
 	font-size: 5em;
 	margin: 0px;
 	white-space: pre;
+}
+
+h2{
+	color: #fef6ef; 
 }
 
 header p.subtitle{
@@ -151,12 +163,20 @@ header menu li a{
 .tab_box menu li{
 	float: left;
 	list-style: none;
-	padding-right: 20px;
 	background: #fff;
+}
+
+.tab_box menu li a{
+	text-decoration: none;
+	display: block;
+	padding: 2px 15px;
+	border-left: 1px solid #ccc;
 }
 
 .tab_box div{
 	background: #fff;
+	border: 1px solid #ccc;
+	border-top: 0px;
 }
 
 .js .tab_box h3{
@@ -170,6 +190,13 @@ header menu li a{
 .tab_box div p{
 	margin: 0px;
 	padding: 5px;
+}
+
+ul.file_list{
+	-moz-box-shadow: 0 0 5px #dddddd;
+	-webkit-box-shadow: 0 0 5px #dddddd;
+	box-shadow: 0 0 5px #dddddd;
+	border: 1px solid #bbb;
 }
 
 ul.file_list,ul.file_list ul{
@@ -221,11 +248,16 @@ ul.file_list li li li li span{
 
 table{
 	background:#fff;
+	-moz-box-shadow: 0 0 5px #dddddd;
+	-webkit-box-shadow: 0 0 5px #dddddd;
+	box-shadow: 0 0 5px #dddddd;
+	border-color: #bbb;
 }
 
 table td,table th{
 	text-align:center;
 	padding:3px;
+	border-color: #bbb;
 }
 
 table td.row_title{
