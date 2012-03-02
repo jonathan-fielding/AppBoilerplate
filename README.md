@@ -10,4 +10,5 @@ Coming soon...
 ## Credits
 
 iOS jQuery Mobile theme - Tait Brown with tweaks by Jonathan Fielding
+
 Data transfer between pages bug fixing - Iszak Bryan
