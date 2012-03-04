@@ -4,6 +4,9 @@ Created by Jonathan Fielding
 ## Introduction
 A jQuery mobile application boilerplate aimed at web application and PhoneGap developers
 
+## Key features
+Coming soon...
+
 ## Sites where its used
 Coming soon...
 
