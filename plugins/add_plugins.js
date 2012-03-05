@@ -6,6 +6,7 @@ var add_plugins = function(){
 			require([app.url_path + 'plugins/sample_plugin/sample_plugin.js',app.url_path + 'plugins/theme_switcher/theme_switcher.js'],function(){ 
 				app.sample_plugin.init();
 				app.theme_switcher.default_theme = 'AppBoilerplate';
+				app.theme_switcher.android_theme = 'Android';
 				app.theme_switcher.iOS_theme = 'iOS';
 				app.theme_switcher.init();
 			});
