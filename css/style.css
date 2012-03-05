@@ -104,7 +104,6 @@ li li{
 	font-size: 1em;
 }
 
-
 header{
 	position: relative;
 	padding: 40px 0 10px;
@@ -116,6 +115,10 @@ header h1{
 	font-size: 5em;
 	margin: 0px;
 	white-space: pre;
+}
+
+header h1 span{
+	font-size: 0.3em;
 }
 
 h2{
