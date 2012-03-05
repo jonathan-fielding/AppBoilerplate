@@ -11,6 +11,10 @@
 /* A
 -----------------------------------------------------------------------------------------------------------*/
 body {
+  /*
+  CSS fix for not being able to see top content or 
+  bottom content in fullscreen mode
+  */
   /* B
   -----------------------------------------------------------------------------------------------------------*/
   /* C
@@ -52,8 +56,23 @@ body {
   /* ...and bring back focus */
   /* custom -- no corders */
 }
-body .ui-page-header-fullscreen .ui-content, body .ui-page-footer-fullscreen .ui-content {
-  padding: 35px 0 45px;
+body .ui-page-footer-fullscreen .ui-content {
+  padding-bottom: 39px;
+}
+body .ui-page-header-fullscreen .ui-content {
+  padding-top: 39px;
+}
+body .ui-page-header-fullscreen .ui-content .ui-listview {
+  margin: 0px 0px -15px;
+}
+body .ui-page-footer-fullscreen .ui-content .ui-listview {
+  margin: -15px 0px 0px;
+}
+body .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview {
+  margin: 0px;
+}
+body .ui-content .ui-listview {
+  margin-bottom: 0px;
 }
 body .ui-bar-a {
   border: 1px solid #b3b3b3;

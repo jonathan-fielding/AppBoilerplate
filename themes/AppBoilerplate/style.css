@@ -1,3 +1,24 @@
-.ui-page-header-fullscreen .ui-content, .ui-page-footer-fullscreen .ui-content{
+/*
+CSS fix for not being able to see top content or 
+bottom content in fullscreen mode
+*/
+
+.ui-page-footer-fullscreen .ui-content{
+    padding-bottom: 39px;
+}
+
+.ui-page-header-fullscreen .ui-content{
     padding-top: 39px;
+}
+
+.ui-page-header-fullscreen .ui-content .ui-listview {
+	margin: 0px 0px -15px;  
+}
+
+.ui-page-footer-fullscreen .ui-content .ui-listview {
+	margin: -15px 0px 0px; 
+}
+
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview {
+	margin: 0px; 
 }

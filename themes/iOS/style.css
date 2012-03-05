@@ -7,10 +7,6 @@
 	color: #4c596e;
 }
 
-.ui-page-header-fullscreen .ui-content, .ui-page-footer-fullscreen .ui-content{
-    padding: 35px 0 45px;
-}
-
 /* === HEADER BARS - DEFAULT AND BLACK === */
 .ui-header {
 	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(0,0,0,0.6) inset;
@@ -60,10 +56,11 @@
 }
 
 /* === LIST VIEWS === */
-.ui-listview {
+.ui-content .ui-listview {
 	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5);
 	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.5);
 	box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	margin-bottom: 0px;
 }
 
 .ui-listview, .ui-listview li {
@@ -680,6 +677,30 @@ input.ui-input-text, .ui-input-search {
 			background: url(images/tabSprite.png) -32px -64px no-repeat;
 		}
 		
+/*
+CSS fix for not being able to see top content or 
+bottom content in fullscreen mode
+*/
+
+.ui-page-footer-fullscreen .ui-content{
+    padding-bottom: 39px;
+}
+
+.ui-page-header-fullscreen .ui-content{
+    padding-top: 39px;
+}
+
+.ui-page-header-fullscreen .ui-content .ui-listview {
+	margin: 0px 0px -15px;  
+}
+
+.ui-page-footer-fullscreen .ui-content .ui-listview {
+	margin: -15px 0px 0px; 
+}
+
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview {
+	margin: 0px; 
+}
 		
 /* === RETINA DEVICE FIXES === */
 @media (-webkit-min-device-pixel-ratio : 1.5), (min-device-pixel-ratio : 1.5) {
