@@ -52,6 +52,9 @@ body {
   /* ...and bring back focus */
   /* custom -- no corders */
 }
+body .ui-page-header-fullscreen .ui-content, body .ui-page-footer-fullscreen .ui-content {
+  padding: 35px 0 45px;
+}
 body .ui-bar-a {
   border: 1px solid #b3b3b3;
   background: #222222;

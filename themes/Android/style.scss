@@ -12,6 +12,11 @@
 /* A
 -----------------------------------------------------------------------------------------------------------*/
 body {
+
+.ui-page-header-fullscreen .ui-content, .ui-page-footer-fullscreen .ui-content{
+    padding: 35px 0 45px;
+}
+
 .ui-bar-a {
 	border: 1px solid  		#B3B3B3  /*{a-bar-border}*/;
 	background: #222222 /*{a-bar-background-color}*/;

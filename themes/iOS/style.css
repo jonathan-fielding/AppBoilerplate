@@ -8,7 +8,7 @@
 }
 
 .ui-page-header-fullscreen .ui-content, .ui-page-footer-fullscreen .ui-content{
-    padding-top: 39px;
+    padding: 35px 0 45px;
 }
 
 /* === HEADER BARS - DEFAULT AND BLACK === */
