@@ -6,6 +6,7 @@ var app = function(){
 	return {
 		'url_path': '', 
 		'theme':'',
+		'os':'',
 		init: function(event, eventData){
 			var module_name = $(eventData.toPage).attr('data-module');
 			var javascript_required = module_name +'.js'
@@ -13,6 +14,8 @@ var app = function(){
 			if(window.location.pathname.match('modules')){
 				app.url_path = '../../';
 			}
+			
+			app.getOS();
 			
 			//Load the plugins into the app
 			require([app.url_path + 'plugins/add_plugins.js'],function(){ 
@@ -41,6 +44,21 @@ var app = function(){
 					document.getElementsByTagName('head')[0].appendChild(stylesheet);
 				}
 			}
+		},
+		getOS: function(){
+			//Sniff the OS, (naughty but necessary for some functionality)
+			if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+				app.os = 'iOS';
+			}
+		
+			if((navigator.userAgent.match(/Android/i))) {
+				app.os = 'Android';
+			}
+			
+			if((navigator.userAgent.match(/Windows Phone OS/i))) {
+				app.os = 'Windows Mobile';
+			}
+			
 		}
 	};
 	

@@ -6,32 +6,6 @@ app.theme_switcher = function(){
 		
 	};
 	
-	var isIOS = function(){
-		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
-			return true;
-		}
-		else{
-			return false;
-		}
-	};
-	
-	var isAndroid = function(){
-		if((navigator.userAgent.match(/Android/i))) {
-			return true;
-		}
-		else{
-			return false;
-		}
-	};
-	
-	var isWinMob = function(){
-		if((navigator.userAgent.match(/Windows Phone OS/i))) {
-			return true;
-		}
-		else{
-			return false;
-		}
-	};
 
 	return {
 		'default_theme'	:	'',
@@ -40,8 +14,7 @@ app.theme_switcher = function(){
 		'winmob_theme'	:	'',
 		init: function(){
 			
-			
-			if(isIOS()){
+			if(app.os === 'iOS'){
 				if(app.theme_switcher.iOS_theme != ''){
 					app.theme = app.theme_switcher.iOS_theme;
 				}
@@ -49,7 +22,7 @@ app.theme_switcher = function(){
 					app.theme = app.theme_switcher.default_theme;
 				}
 			}
-			else if (isAndroid()) {
+			else if (app.os === 'Android') {
 				if(app.theme_switcher.android_theme != ''){
 					app.theme = app.theme_switcher.android_theme;
 				}
@@ -57,7 +30,7 @@ app.theme_switcher = function(){
 					app.theme = app.theme_switcher.default_theme;
 				}
 			}
-			else if (isWinMob()) {
+			else if (app.os === 'Windows Mobile') {
 				if(app.theme_switcher.winmob_theme != ''){
 					app.theme = app.theme_switcher.winmob_theme;
 				}
