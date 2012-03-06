@@ -161,12 +161,17 @@ header menu li a{
 .tab_box menu{
 	padding: 0px;
 	margin: 0px;
+	float: left;
+	width: 298px;
+	min-height: 300px;
+	background: #fff;
+	border: 1px solid #ccc;
 }
 
 .tab_box menu li{
-	float: left;
 	list-style: none;
 	background: #fff;
+	border-bottom: 1px solid #ccc;
 }
 
 .tab_box menu li a{
@@ -179,19 +184,21 @@ header menu li a{
 .tab_box div{
 	background: #fff;
 	border: 1px solid #ccc;
-	border-top: 0px;
-}
-
-.js .tab_box h3{
-	display: none;
+	width: 678px;
+	float: left;
+	min-height: 300px;
 }
 
 .tab_box div p{
 	color: #554444;
 }
 
-.tab_box div p{
+.tab_box div p,.tab_box h3{
 	margin: 0px;
+	padding: 5px;
+}
+
+.tab_box h3{	
 	padding: 5px;
 }
 

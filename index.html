@@ -145,11 +145,12 @@
 				
 				<h2 id="getting_started">Getting started</h2>
 				
-				<div class="tab_box">
+				<div class="tab_box clearfix">
 					<menu class="clearfix">
-						<li><a href="#creating">Step 1 - Creating a project</a></li>
-						<li><a href="#modules">Step 2 - Creating a module</a></li>
-						<li><a href="#plugins">Configuring a plugin</a></li>
+						<li><a href="#creating">Creating a project</a></li>
+						<li><a href="#modules">Creating a module/page</a></li>
+						<li><a href="#functions">Core functions</a></li>
+						<li><a href="#plugin_themeswitcher">Plugin - Theme switcher</a></li>
 					</menu>
 					<div id="creating">
 						<h3>Step 1 - Creating a project</h3>
@@ -164,9 +165,20 @@
 						<h3>Creating a module/page</h3>
 						<p>So you have decided on your structure in step 1, </p>
 					</div>
-					<div id="plugins">
-						<h3>Configuring a plugin</h3>
+					<div id="functions">
+						<h3>Core functions</h3>
+						<p>App Boilerplate has several core functions out of the box</p>
+						<ul>
+							<li>app.updatetheme() - Updates the theme to whatever is stored in app.theme (so if you want to change the theme update this variable first)</li>
+							<li>$.mobile.changepage() - Extended the built in jQuery function to send data
+						</ul>
+					</div>
+					<div id="plugin_themeswitcher">
+						<h3>Plugin - Theme Switcher</h3>
 						<p>
+							AppBoilerplate ships with the a theme switcher plugin which allows your application to automatically detect the users OS and show a native theme. The main benefit of this is when you want your app to look like a native app across all platforms but don't want to have to style your app for each platform.
+						<p>
+							The theme switcher is easily configured to use the theme you want for a particular platform and comes completely pre-configured to use the themes that ship with AppBoilerplate so that out of the box their is separate themes for iOS and Android (and soon Windows Mobile).
 						</p>
 					</div>
 				</div>
