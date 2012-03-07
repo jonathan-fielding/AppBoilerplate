@@ -6,15 +6,15 @@ var app = function(){
 	var getOS = function(){
 		//Sniff the OS, (naughty but necessary for some functionality)
 		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
-			app.os = 'iOS';
+			app.device.os = 'iOS';
 		}
 	
 		if((navigator.userAgent.match(/Android/i))) {
-			app.os = 'Android';
+			app.device.os = 'Android';
 		}
 		
 		if((navigator.userAgent.match(/Windows Phone OS/i))) {
-			app.os = 'Windows Mobile';
+			app.device.os = 'Windows Mobile';
 		}
 		
 	};
@@ -22,7 +22,7 @@ var app = function(){
 	return {
 		'url_path': '', 
 		'theme':'',
-		'os':'',
+		'device':{'os':'','type':''},
 		init: function(event, eventData){
 			var module_name = $(eventData.toPage).attr('data-module');
 			var javascript_required = module_name +'.js'

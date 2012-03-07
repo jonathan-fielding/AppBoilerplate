@@ -14,7 +14,7 @@ app.theme_switcher = function(){
 		'winmob_theme'	:	'',
 		init: function(){
 			
-			if(app.os === 'iOS'){
+			if(app.device.os === 'iOS'){
 				if(app.theme_switcher.iOS_theme != ''){
 					app.theme = app.theme_switcher.iOS_theme;
 				}
@@ -22,7 +22,7 @@ app.theme_switcher = function(){
 					app.theme = app.theme_switcher.default_theme;
 				}
 			}
-			else if (app.os === 'Android') {
+			else if (app.device.os === 'Android') {
 				if(app.theme_switcher.android_theme != ''){
 					app.theme = app.theme_switcher.android_theme;
 				}
@@ -30,7 +30,7 @@ app.theme_switcher = function(){
 					app.theme = app.theme_switcher.default_theme;
 				}
 			}
-			else if (app.os === 'Windows Mobile') {
+			else if (app.device.os === 'Windows Mobile') {
 				if(app.theme_switcher.winmob_theme != ''){
 					app.theme = app.theme_switcher.winmob_theme;
 				}
