@@ -158,6 +158,8 @@ header menu li a{
 	color: #fff;
 }
 
+
+
 .tab_box menu{
 	padding: 0px;
 	margin: 0px;
@@ -177,8 +179,18 @@ header menu li a{
 .tab_box menu li a{
 	text-decoration: none;
 	display: block;
-	padding: 2px 15px;
+	padding: 4px 8px;
 	border-left: 1px solid #ccc;
+}
+
+.tab_box menu li a.active{
+	background: #544;
+	color: #fff;
+}
+
+.tab_box menu li a.active:after{
+	content: '>';
+	float: right;
 }
 
 .tab_box div{
