@@ -3,10 +3,16 @@ var app = function(){
 		
 	};
 
-	var getOS = function(){
+	var getDevice = function(){
 		//Sniff the OS, (naughty but necessary for some functionality)
-		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
 			app.device.os = 'iOS';
+			app.device.type = 'phone';
+		}
+		
+		if((navigator.userAgent.match(/iPad/i))) {
+			app.device.os = 'iOS';
+			app.device.type = 'tablet';
 		}
 	
 		if((navigator.userAgent.match(/Android/i))) {
@@ -15,8 +21,7 @@ var app = function(){
 		
 		if((navigator.userAgent.match(/Windows Phone OS/i))) {
 			app.device.os = 'Windows Mobile';
-		}
-		
+		}	
 	};
 
 	return {
@@ -31,7 +36,7 @@ var app = function(){
 				app.url_path = '../../';
 			}
 			
-			getOS();
+			getDevice();
 			
 			//Load the plugins into the app
 			require([app.url_path + 'plugins/add_plugins.js'],function(){ 
