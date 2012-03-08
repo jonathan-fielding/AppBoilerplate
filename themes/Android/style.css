@@ -56,22 +56,35 @@ body {
   /* ...and bring back focus */
   /* custom -- no corders */
 }
+body .ui-page-header-fullscreen .ui-content, body .ui-page-footer-fullscreen .ui-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 body .ui-page-footer-fullscreen .ui-content {
-  padding-bottom: 39px;
+  padding-bottom: 50px;
 }
 body .ui-page-header-fullscreen .ui-content {
-  padding-top: 39px;
+  padding-top: 50px;
 }
 body .ui-page-header-fullscreen .ui-content .ui-listview {
-  margin: 0px 0px -15px;
+  margin: 0px -15px -15px;
+}
+body .ui-page-header-fullscreen .ui-content .ui-listview:first-child {
+  margin: -15px -15px -15px;
 }
 body .ui-page-footer-fullscreen .ui-content .ui-listview {
-  margin: -15px 0px 0px;
+  margin: -11px -15px -11px;
 }
 body .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview {
-  margin: 0px;
+  margin: 10px -15px;
 }
-body .ui-content .ui-listview {
+body .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:first-child {
+  margin: -15px -15px 0px;
+}
+body .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:first-child:last-child {
+  margin: -15px -15px -9px;
+}
+body .ui-page-footer-fullscreen .ui-content a[data-role=button] {
   margin-bottom: 0px;
 }
 body .ui-bar-a {
