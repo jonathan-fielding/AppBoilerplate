@@ -4,21 +4,37 @@ bottom content in fullscreen mode
 */
 
 .ui-page-footer-fullscreen .ui-content{
-    padding-bottom: 39px;
+    padding-bottom: 50px;
 }
 
 .ui-page-header-fullscreen .ui-content{
-    padding-top: 39px;
+    padding-top: 54px;
 }
 
 .ui-page-header-fullscreen .ui-content .ui-listview {
 	margin: 0px 0px -15px;  
 }
 
+.ui-page-header-fullscreen .ui-content .ui-listview:first-child{
+	margin: -15px 0px -15px;  
+}
+
 .ui-page-footer-fullscreen .ui-content .ui-listview {
-	margin: -15px 0px 0px; 
+	margin: -15px 0px -11px; 
 }
 
 .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview {
 	margin: 0px; 
+}
+
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:first-child{
+	margin: -15px 0px 0px;
+}
+
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:first-child:last-child{
+	margin: -15px 0px -9px;
+}
+
+.ui-page-footer-fullscreen .ui-content a[data-role=button]{
+	margin-bottom: 0px;
 }
