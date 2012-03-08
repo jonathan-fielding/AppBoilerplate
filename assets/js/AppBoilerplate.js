@@ -17,10 +17,17 @@ var app = function(){
 	
 		if((navigator.userAgent.match(/Android/i))) {
 			app.device.os = 'Android';
+			if((navigator.userAgent.match(/Mobile/i))) {
+				app.device.type = 'phone';
+			}
+			else{
+				app.device.type = 'tablet';
+			}
 		}
 		
 		if((navigator.userAgent.match(/Windows Phone OS/i))) {
 			app.device.os = 'Windows Mobile';
+			app.device.type = 'phone'; //Assume is phone as I cant see any Windows Mobile phones on market
 		}	
 	};
 
