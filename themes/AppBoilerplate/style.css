@@ -9,6 +9,7 @@ bottom content in fullscreen mode
 }
 
 .ui-page-footer-fullscreen .ui-content{
+	padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -25,7 +26,19 @@ bottom content in fullscreen mode
 }
 
 .ui-page-footer-fullscreen .ui-content .ui-listview {
+	margin: 10px -15px 0px; 
+}
+
+.ui-page-footer-fullscreen .ui-content .ui-listview:first-child{
+	margin: -11px -15px 0px; 
+}
+
+.ui-page-footer-fullscreen .ui-content .ui-listview:first-child:last-child{
 	margin: -11px -15px -11px; 
+}
+
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content{
+	padding-top: 0px;
 }
 
 .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview {
