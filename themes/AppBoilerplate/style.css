@@ -3,6 +3,26 @@ CSS fix for not being able to see top content or
 bottom content in fullscreen mode
 */
 
+.ui-content .ui-listview-inset {
+	margin: 10px 0;
+}
+
+.ui-content .ui-listview:not(.ui-listview-inset) {
+	margin: 10px -15px;
+}
+
+.ui-content .ui-listview:first-child{
+	margin: -15px -15px 10px;
+}
+
+.ui-content .ui-listview:last-child{
+	margin: 10px -15px -15px;
+}
+
+.ui-content .ui-listview:first-child:last-child{
+	margin: -15px -15px -15px;
+}
+
 .ui-page-header-fullscreen .ui-content, .ui-page-footer-fullscreen .ui-content{
 	padding-left: 15px;
 	padding-right: 15px;
@@ -17,7 +37,7 @@ bottom content in fullscreen mode
     padding-top: 50px;
 }
 
-.ui-page-header-fullscreen .ui-content .ui-listview {
+.ui-page-header-fullscreen .ui-content .ui-listview:not(.ui-listview-inset) {
 	margin: 10px -15px 10px;  
 }
 
@@ -25,7 +45,7 @@ bottom content in fullscreen mode
 	margin: -15px -15px -15px;  
 }
 
-.ui-page-footer-fullscreen .ui-content .ui-listview {
+.ui-page-footer-fullscreen .ui-content .ui-listview:not(.ui-listview-inset) {
 	margin: 10px -15px 0px; 
 }
 
@@ -38,10 +58,10 @@ bottom content in fullscreen mode
 }
 
 .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content{
-	padding-top: 0px;
+/*	padding-top: 0px;*/
 }
 
-.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview {
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:not(.ui-listview-inset) {
 	margin: 10px -15px;
 }
 
@@ -53,6 +73,6 @@ bottom content in fullscreen mode
 	margin: -15px -15px -9px;
 }
 
-.ui-page-footer-fullscreen .ui-content a[data-role=button]{
+.ui-content a[data-role=button]:last-child{
 	margin-bottom: 0px;
 }
