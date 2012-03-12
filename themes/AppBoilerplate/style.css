@@ -35,6 +35,11 @@ bottom content in fullscreen mode
 
 .ui-page-header-fullscreen .ui-content{
     padding-top: 50px;
+    padding-bottom:10px;
+}
+
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content{
+	padding-bottom: 50px;
 }
 
 .ui-page-header-fullscreen .ui-content .ui-listview:not(.ui-listview-inset) {
@@ -57,20 +62,20 @@ bottom content in fullscreen mode
 	margin: -11px -15px -11px; 
 }
 
-.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content{
-/*	padding-top: 0px;*/
-}
-
 .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:not(.ui-listview-inset) {
 	margin: 10px -15px;
 }
 
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:not(.ui-listview-inset):last-child{
+	margin: 10px -15px -10px;
+}
+
 .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:first-child{
-	margin: -15px -15px 0px;
+	margin: -10px -15px 0px;
 }
 
 .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:first-child:last-child{
-	margin: -15px -15px -9px;
+	margin: -10px -15px -9px;
 }
 
 .ui-content a[data-role=button]:last-child{
