@@ -7,7 +7,7 @@ var sample = function(){
 		init: function(eventData){
 			//Handle receiving messages from the previous page
 			if(eventData.options.data){
-				alert(eventData.options.data);
+				console.log(eventData.options.data);
 			}
 		}
 	}

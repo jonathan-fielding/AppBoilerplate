@@ -647,7 +647,7 @@ input.ui-input-text, .ui-input-search {
 }
 .ui-footer .ui-btn-inner {
 	border-color: #434343;
-	padding-top: 40px !important;
+	padding: 23px 0px 3px!important;
 }
 .ui-footer .ui-btn-text {
 	font-size: 10px;
@@ -657,6 +657,7 @@ input.ui-input-text, .ui-input-search {
 	width: 32px;
 	height: 32px;
 	margin-left: -16px;
+	top: 0px;
 }
 	#tabA .ui-icon {
 		background: url(images/tabSprite.png) 0 0 no-repeat;
@@ -682,20 +683,46 @@ CSS fix for not being able to see top content or
 bottom content in fullscreen mode
 */
 
+.ui-content .ui-listview-inset {
+	margin: 10px 0;
+}
+
+.ui-content .ui-listview:not(.ui-listview-inset) {
+	margin: 10px -15px;
+}
+
+.ui-content .ui-listview:first-child{
+	margin: -15px -15px 10px;
+}
+
+.ui-content .ui-listview:last-child{
+	margin: 10px -15px -15px;
+}
+
+.ui-content .ui-listview:first-child:last-child{
+	margin: -15px -15px -15px;
+}
+
 .ui-page-header-fullscreen .ui-content, .ui-page-footer-fullscreen .ui-content{
 	padding-left: 15px;
 	padding-right: 15px;
 }
 
 .ui-page-footer-fullscreen .ui-content{
+	padding-top: 10px;
     padding-bottom: 50px;
 }
 
 .ui-page-header-fullscreen .ui-content{
     padding-top: 50px;
+    padding-bottom:10px;
 }
 
-.ui-page-header-fullscreen .ui-content .ui-listview {
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content{
+	padding-bottom: 50px;
+}
+
+.ui-page-header-fullscreen .ui-content .ui-listview:not(.ui-listview-inset) {
 	margin: 10px -15px 10px;  
 }
 
@@ -703,23 +730,35 @@ bottom content in fullscreen mode
 	margin: -15px -15px -15px;  
 }
 
-.ui-page-footer-fullscreen .ui-content .ui-listview {
+.ui-page-footer-fullscreen .ui-content .ui-listview:not(.ui-listview-inset) {
+	margin: 10px -15px 0px; 
+}
+
+.ui-page-footer-fullscreen .ui-content .ui-listview:first-child{
+	margin: -11px -15px 0px; 
+}
+
+.ui-page-footer-fullscreen .ui-content .ui-listview:first-child:last-child{
 	margin: -11px -15px -11px; 
 }
 
-.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview {
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:not(.ui-listview-inset) {
 	margin: 10px -15px;
 }
 
+.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:not(.ui-listview-inset):last-child{
+	margin: 10px -15px -10px;
+}
+
 .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:first-child{
-	margin: -15px -15px 0px;
+	margin: -10px -15px 0px;
 }
 
 .ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:first-child:last-child{
-	margin: -15px -15px -9px;
+	margin: -10px -15px -9px;
 }
 
-.ui-page-footer-fullscreen .ui-content a[data-role=button]{
+.ui-content a[data-role=button]:last-child{
 	margin-bottom: 0px;
 }
 		

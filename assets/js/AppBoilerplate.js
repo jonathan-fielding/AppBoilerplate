@@ -30,17 +30,27 @@ var app = function(){
 			app.device.type = 'phone'; //Assume is phone as I cant see any Windows Mobile phones on market
 		}	
 	};
-
+	
+	var styleFix = function(){
+		//There is some functionality in jQuery Mobile which is not App like, we fix this in both the CSS and JS
+		$('.ui-footer').removeClass('slideup');	
+		$('.ui-header').removeClass('slidedown');
+	}
+	
 	return {
 		'url_path': '', 
 		'theme':'',
 		'device':{'os':'','type':''},
 		init: function(event, eventData){
+			//Initialise the application page
 			var module_name = $(eventData.toPage).attr('data-module');
 			var javascript_required = module_name +'.js'
 			
 			if(window.location.pathname.match('modules')){
 				app.url_path = '../../';
+			}
+			else{
+				app.url_path = '';
 			}
 			
 			getDevice();
@@ -50,12 +60,15 @@ var app = function(){
 				add_plugins.init();
 			});
 			
+			//Styling
 			app.updateTheme();
+			styleFix();
 			
 			//Each module should have a javascript file, we pull this in here
 			require([javascript_required],function(){ 
 				window[module_name].init(eventData);
-			});				
+			});
+			
 		},
 		updateTheme: function(){
 			//load theme
@@ -78,3 +91,4 @@ var app = function(){
 }();
 
 $(document.body).live('pagechange', app.init);
+
