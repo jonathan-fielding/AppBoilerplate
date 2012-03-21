@@ -35,6 +35,9 @@ var app = function(){
 		//There is some functionality in jQuery Mobile which is not App like, we fix this in both the CSS and JS
 		$('.ui-footer').removeClass('slideup');	
 		$('.ui-header').removeClass('slidedown');
+		
+		$('.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content').css('padding-bottom',$('.ui-page-footer-fullscreen .ui-footer').height() + 11);
+		
 	}
 	
 	return {
@@ -46,11 +49,8 @@ var app = function(){
 			var module_name = $(eventData.toPage).attr('data-module');
 			var javascript_required = module_name +'.js'
 			
-			if(window.location.pathname.match('modules')){
-				app.url_path = '../../';
-			}
-			else{
-				app.url_path = '';
+			if(app.url_path === ''){
+				app.url_path = window.location.href.replace(/modules\/.*?$/, '').replace('index.html','');
 			}
 			
 			getDevice();

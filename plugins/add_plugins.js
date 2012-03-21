@@ -7,7 +7,8 @@ var add_plugins = function(){
 				app.sample_plugin.init();
 				app.theme_switcher.default_theme = 'AppBoilerplate';
 				app.theme_switcher.android_theme = 'Android';
-				app.theme_switcher.iOS_theme = 'iOS';
+				app.theme_switcher.iOS_theme = 'AppBoilerplate';
+				app.theme_switcher.winmob_theme = 'WindowsMob';
 				app.theme_switcher.init();
 				app.notify.init();
 			});
