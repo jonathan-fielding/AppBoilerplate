@@ -11,10 +11,6 @@
 /* A
 -----------------------------------------------------------------------------------------------------------*/
 body {
-  /*
-  CSS fix for not being able to see top content or 
-  bottom content in fullscreen mode
-  */
   /* B
   -----------------------------------------------------------------------------------------------------------*/
   /* C
@@ -56,54 +52,6 @@ body {
   /* ...and bring back focus */
   /* custom -- no corders */
 }
-
-/*
-CSS fix for not being able to see top content or 
-bottom content in fullscreen mode
-*/
-
-.ui-page-header-fullscreen .ui-content, .ui-page-footer-fullscreen .ui-content{
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.ui-page-footer-fullscreen .ui-content{
-    padding-bottom: 50px;
-}
-
-.ui-page-header-fullscreen .ui-content{
-    padding-top: 50px;
-}
-
-.ui-page-header-fullscreen .ui-content .ui-listview {
-	margin: 10px -15px 10px;  
-}
-
-.ui-page-header-fullscreen .ui-content .ui-listview:first-child{
-	margin: -15px -15px -15px;  
-}
-
-.ui-page-footer-fullscreen .ui-content .ui-listview {
-	margin: -11px -15px -11px; 
-}
-
-.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview {
-	margin: 10px -15px;
-}
-
-.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:first-child{
-	margin: -15px -15px 0px;
-}
-
-.ui-page-footer-fullscreen.ui-page-header-fullscreen .ui-content .ui-listview:first-child:last-child{
-	margin: -15px -15px -9px;
-}
-
-.ui-page-footer-fullscreen .ui-content a[data-role=button]{
-	margin-bottom: 0px;
-}
-
-
 body .ui-bar-a {
   border: 1px solid #b3b3b3;
   background: #222222;
