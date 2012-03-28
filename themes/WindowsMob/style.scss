@@ -11,15 +11,38 @@
 
 /* A
 -----------------------------------------------------------------------------------------------------------*/
+
 body {
 
-.ui-footer .ui-navbar ul li{
-	width:50px;
-	display:inline-block;
+.ui-footer{
+	background: #333; 
+	
+	.ui-navbar ul li{
+		width:40px;
+		display:inline-block;
+	}
+}
+
+.ui-header h1.ui-title{
+	text-align:left;
+	margin:10px 15px 0px;
+	text-transform:uppercase;
+	font: normal 0.7em "SegoeWP", Arial, Helvetica, Geneva, sans-serif!important;
+}
+
+.ui-header h2.ui-title{
+	text-align:left;
+	margin:0px 15px 10px;
+	text-transform:lowercase;
+	font: normal 2em "SegoeWP", Arial, Helvetica, Geneva, sans-serif!important;
+}
+
+.ui-page-header-fullscreen .ui-content {
+	padding-top: 82px;
 }
 
 .ui-footer .ui-navbar ul{
-	width: 200px;
+	width: 160px;
 	margin:0 auto;
 }
 
@@ -36,22 +59,19 @@ body {
 	border:0px;
 }
 
+.ui-footer .ui-btn-inner {
+	border: 0px;
+}
+
 .ui-header-fullscreen, .ui-footer-fullscreen {
 	opacity: 1;
 }
 
 .ui-bar-a {
-	border: 1px solid  		#B3B3B3  /*{a-bar-border}*/;
-	background: #222222 /*{a-bar-background-color}*/;
+	border:0px;
 	color: #F5F5F5 /*{a-bar-color}*/;
 	font-weight: bold;
 	text-shadow:  0  /*{a-bar-shadow-x}*/  1px  /*{a-bar-shadow-y}*/  1px  /*{a-bar-shadow-radius}*/ #777 /*{a-bar-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #222222 /*{a-bar-background-start}*/), to( #222222 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #222222 /*{a-bar-background-start}*/, #222222 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #222222 /*{a-bar-background-start}*/, #222222 /*{a-bar-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #222222 /*{a-bar-background-start}*/, #222222 /*{a-bar-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #222222 /*{a-bar-background-start}*/, #222222 /*{a-bar-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #222222 /*{a-bar-background-start}*/, #222222 /*{a-bar-background-end}*/);
 }
 
 .ui-bar-a .ui-link-inherit {
@@ -366,6 +386,11 @@ body {
 .ui-bar-c button {
 	 font-family: Helvetica, Arial, sans-serif  /*{global-font-family}*/;
 }
+
+.ui-body-c .ui-content{
+	background:#000;
+}
+
 .ui-body-c,
 .ui-dialog.ui-overlay-c {
 	border: 1px solid  		#B3B3B3  /*{c-body-border}*/;

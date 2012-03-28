@@ -93,7 +93,7 @@ var app = function(){
 			getDevice();
 			
 			//Load the plugins into the app
-			require([app.url_path + 'plugins/add_plugins.js'],function(){ 
+			app.require([app.url_path + 'plugins/add_plugins.js'],function(){ 
 				add_plugins.init();
 			});
 			
@@ -101,10 +101,13 @@ var app = function(){
 			app.updateTheme();
 			
 			//Each module should have a javascript file, we pull this in here
-			require([javascript_required],function(){ 
+			app.require([javascript_required],function(){ 
 				window[module_name].init(eventData);
 			});
 			
+		},
+		require: function(items, callback){
+			require(items, callback);
 		},
 		updateTheme: function(){
 			//load theme
