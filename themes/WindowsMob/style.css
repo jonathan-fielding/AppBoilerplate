@@ -56,6 +56,18 @@ body {
     body .ui-footer .ui-navbar ul li {
       width: 40px;
       display: inline-block; }
+    body .ui-footer .ui-navbar ul.ui-grid-a {
+      width: 80px;
+      margin: 0 auto; }
+    body .ui-footer .ui-navbar ul.ui-grid-b {
+      width: 120px;
+      margin: 0 auto; }
+    body .ui-footer .ui-navbar ul.ui-grid-c {
+      width: 160px;
+      margin: 0 auto; }
+    body .ui-footer .ui-navbar ul.ui-grid-d {
+      width: 200px;
+      margin: 0 auto; }
   body .ui-header h1.ui-title {
     text-align: left;
     margin: 10px 15px 0px;
@@ -68,9 +80,6 @@ body {
     font: normal 2em "SegoeWP", Arial, Helvetica, Geneva, sans-serif!important; }
   body .ui-page-header-fullscreen .ui-content {
     padding-top: 82px; }
-  body .ui-footer .ui-navbar ul {
-    width: 160px;
-    margin: 0 auto; }
   body .ui-btn-icon-top .ui-icon, body .ui-btn-icon-bottom .ui-icon {
     border: 1px solid #fff; }
   body .ui-footer .ui-navbar .ui-btn-text {

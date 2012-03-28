@@ -21,6 +21,27 @@ body {
 		width:40px;
 		display:inline-block;
 	}
+	
+	.ui-navbar ul.ui-grid-a{
+		width: 80px;
+		margin:0 auto;
+	}
+	
+	.ui-navbar ul.ui-grid-b{
+		width: 120px;
+		margin:0 auto;
+	}
+	
+	.ui-navbar ul.ui-grid-c{
+		width: 160px;
+		margin:0 auto;
+	}
+	
+	.ui-navbar ul.ui-grid-d{
+		width: 200px;
+		margin:0 auto;
+	}
+	
 }
 
 .ui-header h1.ui-title{
@@ -39,11 +60,6 @@ body {
 
 .ui-page-header-fullscreen .ui-content {
 	padding-top: 82px;
-}
-
-.ui-footer .ui-navbar ul{
-	width: 160px;
-	margin:0 auto;
 }
 
 .ui-btn-icon-top .ui-icon, .ui-btn-icon-bottom .ui-icon {
