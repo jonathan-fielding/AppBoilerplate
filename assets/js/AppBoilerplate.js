@@ -93,16 +93,19 @@ var app = function(){
 			getDevice();
 			
 			//Load the plugins into the app
-			app.require([app.url_path + 'plugins/add_plugins.js'],function(){ 
-				add_plugins.init();
-			});
+			app.require([app.url_path + 'app/extensions/add_ext.js'],function(){ 
+				
+				//Execute extentions
+				app.ext.init();
+				
+				//Styling
+				app.updateTheme();
+				
+				//Each module should have a javascript file, we pull this in here
+				app.require([javascript_required],function(){ 
+					window[module_name].init(eventData);
+				});
 			
-			//Styling
-			app.updateTheme();
-			
-			//Each module should have a javascript file, we pull this in here
-			app.require([javascript_required],function(){ 
-				window[module_name].init(eventData);
 			});
 			
 		},

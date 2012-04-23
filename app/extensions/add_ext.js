@@ -1,16 +1,23 @@
-var add_plugins = function(){
+app.ext = function(){
+	var extensions = ['sample_plugin/sample_plugin.js','theme_switcher/theme_switcher.js'];
+
 	return {
 		init: function(){
 			//add all plugins to the app
 			
-			app.require([app.url_path + 'plugins/sample_plugin/sample_plugin.js',app.url_path + 'plugins/theme_switcher/theme_switcher.js',app.url_path + 'plugins/notify/notify.js'],function(){ 
+			var noExtensions = extensions.length;
+			
+			for (var i = 0; i < noExtensions; i++) {
+				extensions[i] = app.url_path + 'app/extensions/' + extensions[i];
+			}
+			
+			app.require(extensions,function(){ 
 				app.sample_plugin.init();
 				app.theme_switcher.default_theme = 'AppBoilerplate';
 				app.theme_switcher.android_theme = 'Android';
 				app.theme_switcher.iOS_theme = 'iOS';
 				app.theme_switcher.winmob_theme = 'WindowsMob';
 				app.theme_switcher.init();
-				app.notify.init();
 			});
 		}
 	};
